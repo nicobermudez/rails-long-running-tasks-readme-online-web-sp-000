@@ -5,4 +5,7 @@ class CustomersController < ApplicationController
     @customers = Customer.all
   end
 
+  def upload
+    CSV.foreach(params[:leads])
+
 end
